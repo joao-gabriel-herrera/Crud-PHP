@@ -1,0 +1,153 @@
+body {
+  background-color: #fffccd;
+}
+
+/* Formulário */
+
+#form_container {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0.5px 10px 20px rgba(0, 0, 0, 0.3);
+  margin: 8% auto;
+  padding: 25px;
+}
+
+#form_container h3 {
+  font-weight: 900;
+  margin-bottom: 30px;
+  text-align: center;
+}
+#link_container > a {
+  color: #222;
+  transition: 0.3s;
+  text-decoration: none;
+}
+#form_container a:hover {
+  color: #ff6863;
+}
+#form_container .form-control {
+  border: none;
+  border-bottom: 1px solid #ff6863;
+  border-radius: 0;
+}
+#form_container .form-control:focus {
+  box-shadow: none;
+}
+#form_container .form-floating label {
+  color: #ccc;
+}
+#form_container .form-floating > .form-control:focus ~ label {
+  color: #222;
+}
+#form_container input[type="submit"] {
+  background-color: #ff6863;
+  border: none;
+  width: 50%;
+  border-radius: 20px;
+}
+#form_container input[type="checkbox"]:checked {
+  background-color: #ff6863;
+  border: none;
+}
+#form_container .form-check-input:focus {
+  box-shadow: none;
+}
+/* Imagem */
+.img-fluid {
+  background-image: url(../img/login.svg);
+  background-position: center;
+  background-size: contain;
+  height: 350px;
+  background-repeat: no-repeat;
+}
+@media (max-width: 575px) {
+  #form_container {
+    margin: 5% auto;
+  }
+  #form_container form {
+    padding-bottom: 75px;
+  }
+  #form_container h3 {
+    font-size: 22px;
+  }
+  #form_container input[type="submit"] {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .img-fluid {
+    background-image: url(../img/mobile_login.svg);
+    height: 250px;
+    margin: 40px auto;
+  }
+  #form_container {
+    margin: 5% auto;
+  }
+  #form_container input[type="submit"] {
+    width: 100%;
+  }
+}
+/* Imagem página de cadastro */
+.img2 {
+  background-image: url(../img/register.svg);
+  background-position: center;
+  background-size: contain;
+  height: 350px;
+  background-repeat: no-repeat;
+}
+@media (max-width: 575px) {
+  #form_container {
+    margin: 5% auto;
+  }
+  #form_container form {
+    padding-bottom: 0px;
+  }
+  #form_container h3 {
+    font-size: 22px;
+  }
+  #form_container input[type="submit"] {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .img2 {
+    background-image: url(../img/mobile_register.svg);
+    height: 250px;
+    margin: 40px auto;
+  }
+  #form_container {
+    margin: 5% auto;
+  }
+  #form_container input[type="submit"] {
+    width: 100%;
+  }
+}
+
+/* Redireconamento */
+#enviar {
+  text-align: center;
+}
+#link_container {
+  margin: 40px auto;
+  text-align: center;
+}
+
+/* Painel cabeçalho */
+
+.painel {
+  width: 100%;
+  background-color: #ff5b44;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.usuario {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+body > div.painel > div > p {
+  margin: 0px 10px;
+}
